@@ -4,24 +4,41 @@
 	saptarshi.office@gmail.com
 	saptarshi.c@digitallyinked.in
 
-	Fonts:
+	Fonts: PT Serif, PT Sans
 	Colors:
 */
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@700&display=swap');
+
+
+/*     GENERAL     */
+
 :root {
+	--bs-font-sans-serif: "PT Sans","Roboto", "Open Sans", sans-serif;
+	--bs-body-color: var(--bs-primary);
 }
 
-/*	HEADER STYLES	*/
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-family: "PT Serif", serif;
+	font-weight: 700;
+}
+
+/*	HEADER */
 
 .header-top {
-	font-size: 0.8rem;
 	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 	position: relative;
 	z-index: 100;
 }
 
+.email {
+	font-size: 0.8rem;
+}
+
 .masthead {
 	background-image: url("../images/bg.png");
+	background-color: var(--bs-primary);
+    background-blend-mode: hard-light;
 }
 
 .photo img {
@@ -54,4 +71,14 @@
 
 .education a {
 	word-break: break-all;
+}
+
+/*	FOOTER	*/
+
+.links a {
+	word-break: break-all;
+}
+
+.copyright {
+	font-size: 0.8rem;
 }

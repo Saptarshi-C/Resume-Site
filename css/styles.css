@@ -7,3 +7,51 @@
 	Fonts:
 	Colors:
 */
+
+:root {
+}
+
+/*	HEADER STYLES	*/
+
+.header-top {
+	font-size: 0.8rem;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+	position: relative;
+	z-index: 100;
+}
+
+.masthead {
+	background-image: url("../images/bg.png");
+}
+
+.photo img {
+	max-width: 250px;
+	border-radius: 50%;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.intro > * {
+	margin-bottom: 2rem;
+	transform: skewX(-15deg);
+}
+
+.intro span {
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/*	MAIN CONTENT	*/
+
+.main {
+	position: relative;
+	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+
+}
+
+.content-heading {
+	margin-left: 0.5rem;
+	transform: skewX(-15deg);
+}
+
+.education a {
+	word-break: break-all;
+}

@@ -5,7 +5,7 @@
 	saptarshi.c@digitallyinked.in
 
 	Fonts: PT Serif, PT Sans
-	Colors:
+	Colors: #635be7 / Light to Medium Blue
 */
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif:wght@700&display=swap');
@@ -14,7 +14,7 @@
 /*     GENERAL     */
 
 :root {
-	--bs-primary-rgb: 111,66,193;
+	--bs-primary-rgb: 99,91,231;
 	--bs-font-sans-serif: "PT Sans","Roboto", "Open Sans", sans-serif;
 	--bs-body-color: rgb(var(--bs-primary-rgb));
 }
@@ -22,6 +22,10 @@
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-family: "PT Serif", serif;
 	font-weight: 700;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 /*	HEADER */
@@ -49,11 +53,11 @@
 }
 
 .intro > * {
-	margin-bottom: 2rem;
 	transform: skewX(-15deg);
 }
 
 .intro span {
+	display: inline-block;
 	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
@@ -70,11 +74,19 @@
 	transform: skewX(-15deg);
 }
 
+.content-heading span {
+	display: inline-block;
+}
+
+.skills h4 > span {
+	display: inline-block;
+}
+
 .skills .icons img {
 	display: inline-block;
 	max-width: 7rem;
 	margin: 1rem;
-	filter: invert(35%) sepia(19%) saturate(3814%) hue-rotate(233deg) brightness(86%) contrast(98%);
+	filter: invert(33%) sepia(48%) saturate(3502%) hue-rotate(231deg) brightness(95%) contrast(90%);
 }
 
 .skills .other-skills li {

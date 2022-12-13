@@ -24,10 +24,6 @@
 	font-weight: 700;
 }
 
-body {
-	overflow-x: hidden;
-}
-
 /*	HEADER */
 
 .header-top {
@@ -59,6 +55,7 @@ body {
 
 .intro span {
 	display: inline-block;
+	margin-bottom: 0.5rem;
 	box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 

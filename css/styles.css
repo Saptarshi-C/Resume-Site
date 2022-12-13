@@ -14,8 +14,9 @@
 /*     GENERAL     */
 
 :root {
+	--bs-primary-rgb: 111,66,193;
 	--bs-font-sans-serif: "PT Sans","Roboto", "Open Sans", sans-serif;
-	--bs-body-color: var(--bs-primary);
+	--bs-body-color: rgb(var(--bs-primary-rgb));
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -67,6 +68,21 @@
 .content-heading {
 	margin-left: 0.5rem;
 	transform: skewX(-15deg);
+}
+
+.skills .icons img {
+	display: inline-block;
+	max-width: 7rem;
+	margin: 1rem;
+	filter: invert(35%) sepia(19%) saturate(3814%) hue-rotate(233deg) brightness(86%) contrast(98%);
+}
+
+.skills .other-skills li {
+	display: inline-block;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 0.5rem;
+	background-color: rgb(var(--bs-primary-rgb));
 }
 
 .education a {

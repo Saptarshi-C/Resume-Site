@@ -14,9 +14,11 @@
 /*     GENERAL     */
 
 :root {
-	--bs-primary-rgb: 99,91,231;
+/*	--bs-primary-rgb: 99,91,231;*/
+	--bs-primary: #635be7;
 	--bs-font-sans-serif: "PT Sans","Roboto", "Open Sans", sans-serif;
-	--bs-body-color: rgb(var(--bs-primary-rgb));
+/*	--bs-body-color: rgb(var(--bs-primary-rgb));*/
+	--bs-body-color: var(--bs-primary);
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -32,8 +34,42 @@
 	z-index: 100;
 }
 
-.email {
+.email-phone {
 	font-size: 0.8rem;
+}
+
+.main-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-menu ul li {
+	display: inline-block;
+}
+
+.main-menu ul li a {
+	background-color: var(--bs-white);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	margin-right: 0.7rem;
+	border-radius: var(--bs-border-radius);
+}
+
+.main-menu ul li a.active {
+	background-color: var(--bs-purple);
+	color: var(--bs-white);
+}
+
+.main-menu ul li a:hover {
+	background-color: var(--bs-secondary);
+	color: var(--bs-white);
+}
+
+.main-menu ul li a,
+.main-menu ul li a.active,
+.main-menu ul li a:hover {
+	transition: background-color 250ms ease, color 250ms ease;
 }
 
 .masthead {
@@ -97,6 +133,11 @@
 
 .education a {
 	word-break: break-all;
+}
+
+article img {
+	border: 1px solid var(--bs-primary);
+	margin-bottom: 1rem;
 }
 
 /*	FOOTER	*/
